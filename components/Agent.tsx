@@ -160,9 +160,9 @@ const Agent = ({
             <Image
               src="/ai-avatar.png"
               alt="profile-image"
-              width={65}
-              height={54}
-              className="object-cover"
+              width={80}
+              height={80}
+              className="object-cover mr-2"
             />
             {isSpeaking && <span className="animate-speak" />}
           </div>
@@ -200,7 +200,7 @@ const Agent = ({
         </div>
       )}
 
-      <div className="w-full flex justify-center">
+      <div className="w-full flex justify-center mb-8">
         {callStatus !== "ACTIVE" ? (
           <button className="relative btn-call" onClick={() => handleCall()}>
             <span
